@@ -1,0 +1,27 @@
+﻿@model GolfBag
+
+<h1>@Model.Player's Golf Bag</h1>
+<p>ID #: @Model.Id: Capacity: @Model.Capacity</p>
+
+
+<h4>Clubs</h4>
+
+@if(Model.Clubs.Count != 0)
+{
+    @foreach (var e in Model.Clubs)
+    {
+        <p>@e.Name</p>
+    }
+}
+
+else if(Model.Clubs.Count == 0)
+{
+    <p>There are currently no clubs in this bag</p>
+}
+
+<form action="/golfbags/edit/@Model.Id">
+    <button class="create" type="submit">Edit Bag</button>
+</form>
+<form action="/golfbags/@Model.Id/clubs/new">
+    <button class="create" type="submit">Add Club</button>
+</form>

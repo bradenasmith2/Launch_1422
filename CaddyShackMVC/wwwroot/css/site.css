@@ -16,3 +16,46 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+button {
+    border: solid;
+    border-color: white;
+    background-color: white;
+    display: block;
+    float: left;
+}
+
+.create {
+    inset: unset;
+    border: solid;
+    border-color: white;
+    background-color: #7c73e6;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+    .create:hover {
+        background-color: #c4c1e0;
+        
+    }
+
+input {
+    display: flex;
+    flex-direction: column;
+    /*    padding-bottom: 5px;*/
+    border: solid;
+    border-radius: 10px;
+    border-width: 2px;
+}
+
+label {
+    padding-top: 10px;
+    font-size: 28px;
+}
+
+.container-fluid {
+    background-color: #c4c1e0;
+}

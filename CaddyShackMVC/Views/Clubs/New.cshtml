@@ -1,0 +1,12 @@
+﻿@model GolfBag
+
+<h1>Add a Club to Your <a href="/golfbags/@Model.Id">Bag</a></h1>
+
+<form method="post" action="/golfbags/@Model.Id/clubs">
+
+    <label for="Name">Name </label>
+    <input type="text" name="Name" id="Name" />
+    <br />
+    <button class="create" type="submit">Add Bag</button>
+
+</form>
